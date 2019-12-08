@@ -1,28 +1,35 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <section id="app" class="section">
+    <div class="container">
+      <h1 class="title has-text-centered">Máquina Cervejeira</h1>
+      <FormBeer />
+    </div>
+  </section>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import FormBeer from './components/FormBeer.vue'
 
 export default {
-  name: 'app',
+  name: 'App',
   components: {
-    HelloWorld
+    FormBeer
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  @import url('https://fonts.googleapis.com/css?family=Share:700&display=swap');
+
+  .section {
+    height: 100vh;
+    background-color: #FFFB1F;
+  }
+
+  .title {
+    font-family: 'Share', cursive;
+    font-size: 70px;
+    color: white;
+    text-shadow: 2px 2px 2px rgb(117, 117, 117);
+  }
 </style>
