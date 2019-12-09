@@ -5,6 +5,7 @@
         <b-field label="Qual temperatura você deseja sua cerveja?">
           <form @submit.prevent="getStyle">
             <input class="input"
+              required
               type="number" 
               placeholder="Digite a temperatura" 
               v-model="temperature">
