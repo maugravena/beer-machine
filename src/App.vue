@@ -1,7 +1,7 @@
 <template>
   <section id="app" class="section">
     <div class="container">
-      <h1 class="title has-text-centered">Máquina Cervejeira</h1>
+      <h1 class="name has-text-centered">Máquina Cervejeira</h1>
       <FormBeer />
     </div>
   </section>
@@ -26,10 +26,10 @@ export default {
     background-color: #FFFB1F;
   }
 
-  .title {
+  .name {
     font-family: 'Share', cursive;
-    font-size: 70px;
-    color: white;
+    font-size: 60px;
+    color: rgb(0, 0, 0);
     text-shadow: 2px 2px 2px rgb(117, 117, 117);
   }
 </style>
